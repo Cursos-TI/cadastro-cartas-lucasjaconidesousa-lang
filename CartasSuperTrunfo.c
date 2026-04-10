@@ -22,17 +22,17 @@ int main() {
   int populaçao;
   int turismo;
   float area;
-  float pib;
-
+  float pib, dencidadepp, pibper;
+  
 
   //----CARTA2----
-  char estado2[10];
+  char estado2[6];
   char codico2[10];
   char cidade2[40];
   int populaçao2;
   int turismo2;
   float area2;
-  float pib2;
+  float pib2, dencidadepp2, pibper2;
 
   //defini as variaveis com base no numero de caractéres e padrão.
 
@@ -62,8 +62,8 @@ int main() {
 
 
   //----------------CARTA2-------------------
-    printf("Qual é seu estado:");
-  scanf("%s", estado2);
+  printf("Qual é seu estado:");
+  scanf("%s", &estado2);
 
   printf("Qual é seu códico:");
   scanf("%s", codico2);
@@ -95,7 +95,7 @@ int main() {
 
   //------Saida de dados da CARTA 2 -------
   printf("\n-----------Carta2----------\n");
-  printf("seu estado é: %s\nseu códico é: %s\nsua cidade é: %s \n", estado2, codico2, cidade2);
+  printf("seu estado é: %s\nseu códico é: %s\nsua cidade é: %s\n", estado2, codico2, cidade2);
   printf("A população é: %d\nnumero de pontos turisticos: %d\n", populaçao2, turismo2);
   printf("a área em quilometros quadrados é: %.2fkm² \nO pib da cidade é: %2.fbi", area2, pib2);
 
