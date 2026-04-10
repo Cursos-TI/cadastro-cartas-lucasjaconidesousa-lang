@@ -33,11 +33,12 @@ int main() {
   int turismo2;
   float area2;
   float pib2, dencidadepp2, pibper2;
-
+  
   //defini as variaveis com base no numero de caractéres e padrão.
 
+
+
   // Área para entrada de dados
-  
   //---------CARTA1----------
   printf("Qual é seu estado:");
   scanf("%s", estado);
@@ -60,8 +61,9 @@ int main() {
   printf("Qual é o  Produto Interno Bruto da sua cidade:");
   scanf("%f", &pib);
 
-
-  //----------------CARTA2-------------------
+ 
+ 
+ //----------------CARTA2-------------------
   printf("Qual é seu estado:");
   scanf("%s", &estado2);
 
@@ -86,19 +88,34 @@ int main() {
   
   /* essa é a entrada de dados*/
 
+
+
+//----------------Equações da carta 1-------------------
+  dencidadepp = populaçao / area;
+  pibper = pib / populaçao; 
+
+
+//----------------Equações da carta 2-------------------
+ 
+ dencidadepp2 = populaçao2 / area2;
+  pibper2 = pib2 / populaçao2; 
+
+
+
+
   // Área para exibição dos dados da cidade
   //------Saida de dados da CARTA 1 -------
   printf("\n-----------Carta1----------\n");
   printf("seu estado é: %s\nseu códico é: %s\nsua cidade é: %s \n", estado, codico, cidade);
   printf("A população é: %d\nnumero de pontos turisticos: %d\n", populaçao, turismo);
-  printf("a área em quilometros quadrados é: %.2fkm² \nO pib da cidade é: %2.fbi", area, pib);
-
+  printf("a área em quilometros quadrados é: %.2fkm² \nO pib da cidade é: %2.fbi\n", area, pib);
+  printf("A  Densidade Populacional é : %.2f\nO PIB per Capita é : %freais", dencidadepp, pibper);
   //------Saida de dados da CARTA 2 -------
   printf("\n-----------Carta2----------\n");
   printf("seu estado é: %s\nseu códico é: %s\nsua cidade é: %s\n", estado2, codico2, cidade2);
   printf("A população é: %d\nnumero de pontos turisticos: %d\n", populaçao2, turismo2);
-  printf("a área em quilometros quadrados é: %.2fkm² \nO pib da cidade é: %2.fbi", area2, pib2);
-
+  printf("a área em quilometros quadrados é: %.2fkm² \nO pib da cidade é: %2.fbi\n", area2, pib2);
+  printf("A  Densidade Populacional é : %.2f\nO PIB per Capita é :%freais", dencidadepp2, pibper2);
   //coloquei tudo junto pra não ter que ficar dando varios printf.
 
 return 0;
