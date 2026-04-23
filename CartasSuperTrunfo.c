@@ -124,12 +124,11 @@ int main() {
   printf("O super poder da cartar 2 é: %.2f\n", super2);
 
   //coloquei tudo junto pra não ter que ficar dando varios printf.
-
-
+  
+  
   //comparação entre as cartas
   // se der 0 é falso e 1 é verdadeiro
-printf("\n-----------comparação da Carta 1----------\n");
-printf("Poulação: A carta 1 venceu: %d\n ", (populaçao > populaçao2) );
+  printf("\n-----------comparação da Carta 1----------\n");
 printf("Área: A carta 1 venceu: %d\n ", (area > area2) );
 printf("PIB: A carta 1 venceu: %d\n ", (pib > pib2) );
 printf("Pontos Turísticos: A carta 1 venceu: %d\n ", (turismo > turismo2) );
@@ -138,13 +137,23 @@ printf("PIB per Capita: A carta 1 venceu: %d\n ", (pibper > pibper2) );
 printf("Super Poder: A carta 1 venceu: %d\n ", (super > super2) );
 
 printf("\n-----------comparação da Carta 2----------\n");
-printf("Poulação: A carta 2 venceu: %d\n ", (populaçao2 > populaçao) );
 printf("Área: A carta 2 venceu: %d\n ", (area2 > area) );
 printf("PIB: A carta 2 venceu: %d\n ", (pib2 > pib) );
 printf("Pontos Turísticos: A carta 2 venceu: %d\n ", (turismo2 > turismo) );
 printf("Densidade Populacional: A carta 2 venceu: %d\n ", (dencidadepp2 < dencidadepp) );
 printf("PIB per Capita: A carta 2 venceu: %d\n ", (pibper2 > pibper) );
 printf("Super Poder: A carta 2 venceu: %d\n ", (super2 > super) );
+
+
+//comparação com if-else
+printf("-----------comparação da população por if-else----------- \n");
+
+if(populaçao > populaçao2){
+   printf("A população da Carta 1 Venceu!. com a quantidade populacional de %lu habitantes\n", populaçao);
+} else {
+  printf("A população da Carta 2 Venceu!. com a quantidade populacional de %lu habitantes\n", populaçao2);
+}
+ 
 
 return 0;
 } 
